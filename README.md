@@ -53,7 +53,7 @@ PCA is used to reduce dimensionality, retaining 99% of the variance with 19 comp
 Multiple models were built and evaluated:
 
 1. **Logistic Regression**
-2. **Decision Tree Classifier**
+2. **Gradient Boosting Classifier**
 3. **Random Forest Classifier**
 4. **XGBoost**
 5. **AdaBoost**
@@ -62,14 +62,15 @@ Hyperparameters for each model were optimized using GridSearchCV with cross-vali
 
 ## Results
 
-- **Random Forest**: Best performance with an accuracy of 81.55%.
-- **XGBoost**: Accuracy of 81.33%.
-- **AdaBoost**: Accuracy of 80.80%.
-- **Logistic Regression and Decision Tree**: Performed well but with lower accuracy compared to ensemble methods.
+- **Gradient Boosting Classifier**: Best performance with an f1 of 0.5014.
+- **Random Forest**: 0.4853
+- **XGBoost**: 0.4778
+- **AdaBoost**: 0.3751.
+- **Logistic Regression**: 0.3175
 
 ## Conclusion
 
-The Random Forest model performed the best, making it the preferred choice for predicting credit card defaults in this dataset. However, XGBoost offers a good trade-off between accuracy and computational efficiency.
+The GradientBoosting Classifier performed the best, making it the preferred choice for predicting credit card defaults in this dataset. However, XGBoost offers a good trade-off between accuracy and computational efficiency.
 
 ## Future Work
 
